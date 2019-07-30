@@ -1,0 +1,22 @@
+Instalar o Composer-Setup (https://getcomposer.org/download/)
+Criar 
+Json (https://packagist.org/)
+
+Utilizar Twig (https://packagist.org/packages/twig/twig)
+
+
+      
+  
+$loader = new \Twig\Loader\FilesystemLoader('app/view');
+        
+$twig = new \Twig\Environment($loader);
+        
+$template = $twig->load('create.html');
+
+        
+$parametros = array();
+
+        
+$conteudo = $template->render($parametros);
+        
+echo $conteudo;
